@@ -43,8 +43,16 @@ If you're using cygwin, please make package in linux environment because cygwin 
 
 This will create an s3 bucket, a lambda function and an iam role for lambda.
 
-```
+```bash
 $ cd terraform
+$ export AWS_ACCESS_KEY_ID=foo
+$ export AWS_SECRET_ACCESS_KEY=bar
+$ export AWS_DEFAULT_REGION=us-east-1
+$ vim variables.tf
+variable "assets_bucket" {
+  default = "your_bucket"
+}
+
 $ terraform plan
 $ terraform apply
 ```
