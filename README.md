@@ -16,7 +16,7 @@ pip install -r requirements.txt -t .
 `config.py`
 
 ```python
-max_width = 1344
+max_width = 800
 max_height = 800
 image_format = 'jpg'
 acl = 'public-read'
