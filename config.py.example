@@ -1,0 +1,13 @@
+#config file for image processing
+max_width = 1344
+max_height = 800
+image_format = 'jpg'
+acl = 'public-read'
+cjpeg_options = '-optimize -progressive'
+
+# Upload to same path if output dir and bucket are empty
+# This will generate resized image in '/resized/original/path/thumb_original_resized.jpg' in `output_bucket` from `/original/path/original.jpg`
+output_dir = '/resized'
+output_bucket = 'output_bucket'
+prefix = 'thumb_'
+suffix = '_resized'
