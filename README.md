@@ -11,6 +11,21 @@ pip install -r requirements.txt -t .
 
 ## Usage
 
+- Set config
+
+`config.py`
+
+```
+max_width = 1344
+max_height = 800
+image_format = 'jpg'
+acl = 'public-read'
+cjpeg_options = '-optimize -progressive'
+output_dir = '/resized'
+output_bucket = 'output_bucket'
+prefix = 'thumb_'
+suffix = '_resized'
+```
 
 - make package for lambda
 
