@@ -74,7 +74,7 @@ def optimize(src, dest):
   return
 
 def metadata(bucket, key):
-  return s3.head_objec$t(Bucket=bucket, Key=key)['Metadata']
+  return s3.head_object(Bucket=bucket, Key=key)['Metadata']
 
 def download(bucket, key, dest):
   return s3.download_file(Bucket=bucket, Key=key, Filename=dest)  
