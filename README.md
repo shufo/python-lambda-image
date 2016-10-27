@@ -1,6 +1,6 @@
 # python-lambda-image
 
-A script for creating thumbnail image by AWS lambda.
+A thumbnail image generator by AWS lambda (python).
 
 ## Installation
 
