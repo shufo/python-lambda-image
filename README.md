@@ -18,8 +18,8 @@ pip install -r requirements.txt -t .
 ```python
 max_width = 800
 max_height = 800
-image_format = 'jpg'
-acl = 'public-read'
+image_format = 'jpg' # or 'png'
+acl = 'public-read' # You can specify canned ACL for S3
 cjpeg_options = '-optimize -progressive'
 output_dir = '/resized'
 output_bucket = 'output_bucket'
